@@ -1,0 +1,71 @@
+2021-05-14 16:48:53,549 - ERROR - train.py:99 - train() - Traceback (most recent call last):
+  File "D:/spyder/tensorflowproject/bert_bilstm_crf_ner/train.py", line 36, in train
+    with open(args["bert_tag2id_path"], "w", encoding="utf-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\spyder\\tensorflowproject\\bert_bilstm_crf_ner\\model_result\\tag2id.dict'
+
+2021-05-14 16:50:13,801 - ERROR - train.py:100 - train() - Traceback (most recent call last):
+  File "D:/spyder/tensorflowproject/bert_bilstm_crf_ner/train.py", line 37, in train
+    with open(args["bert_tag2id_path"], "w", encoding="utf-8") as f:
+PermissionError: [Errno 13] Permission denied: 'D:\\spyder\\tensorflowproject\\bert_bilstm_crf_ner\\model_result\\tag2id.dict'
+
+2021-05-14 16:51:46,040 - INFO - train.py:58 - train() - 模型参数保存:D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\config.conf
+2021-05-14 16:51:50,981 - INFO - utils.py:170 - create_model() - Created model with fresh parameters.
+2021-05-14 16:51:55,030 - INFO - eval.py:51 - evaluate() - val dataset -- acc: 90.70, pre: 0.00, rec: 0.00, FB1: 0.00
+2021-05-14 16:51:55,032 - INFO - train.py:92 - train() - epoch: 0/3 dev data result: acc :0.9069767441860465 loss: 253.96278381347656
+2021-05-14 16:51:55,032 - INFO - utils.py:154 - save_model() - checkpoint_path: D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\models\model.ckpt
+2021-05-14 16:51:57,234 - INFO - utils.py:156 - save_model() - model saved
+2021-05-14 16:51:57,648 - INFO - eval.py:51 - evaluate() - val dataset -- acc: 90.70, pre: 0.00, rec: 0.00, FB1: 0.00
+2021-05-14 16:51:57,648 - INFO - train.py:92 - train() - epoch: 1/3 dev data result: acc :0.9069767441860465 loss: 127.15194702148438
+2021-05-14 16:51:57,648 - INFO - utils.py:154 - save_model() - checkpoint_path: D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\models\model.ckpt
+2021-05-14 16:51:59,674 - INFO - utils.py:156 - save_model() - model saved
+2021-05-14 16:52:00,103 - INFO - eval.py:51 - evaluate() - val dataset -- acc: 90.70, pre: 0.00, rec: 0.00, FB1: 0.00
+2021-05-14 16:52:00,104 - INFO - train.py:92 - train() - epoch: 2/3 dev data result: acc :0.9069767441860465 loss: 96.31039428710938
+2021-05-14 16:52:00,104 - INFO - utils.py:154 - save_model() - checkpoint_path: D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\models\model.ckpt
+2021-05-14 16:52:02,207 - INFO - utils.py:156 - save_model() - model saved
+2021-05-14 16:54:14,054 - INFO - train.py:58 - train() - 模型参数保存:D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\config.conf
+2021-05-14 16:54:18,870 - INFO - utils.py:170 - create_model() - Created model with fresh parameters.
+2021-05-14 16:54:21,779 - INFO - eval.py:51 - evaluate() - val dataset -- acc: 89.92, pre: 0.00, rec: 0.00, FB1: 0.00
+2021-05-14 16:54:21,779 - INFO - train.py:92 - train() - epoch: 0/3 dev data result: acc :0.8992248062015504 loss: 301.92987060546875
+2021-05-14 16:54:21,779 - INFO - utils.py:154 - save_model() - checkpoint_path: D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\models\model.ckpt
+2021-05-14 16:54:24,062 - INFO - utils.py:156 - save_model() - model saved
+2021-05-14 16:54:24,489 - INFO - eval.py:51 - evaluate() - val dataset -- acc: 90.70, pre: 0.00, rec: 0.00, FB1: 0.00
+2021-05-14 16:54:24,489 - INFO - train.py:92 - train() - epoch: 1/3 dev data result: acc :0.9069767441860465 loss: 158.3498992919922
+2021-05-14 16:54:24,489 - INFO - utils.py:154 - save_model() - checkpoint_path: D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\models\model.ckpt
+2021-05-14 16:54:27,127 - INFO - utils.py:156 - save_model() - model saved
+2021-05-14 16:54:27,548 - INFO - eval.py:51 - evaluate() - val dataset -- acc: 90.70, pre: 0.00, rec: 0.00, FB1: 0.00
+2021-05-14 16:54:27,549 - INFO - train.py:92 - train() - epoch: 2/3 dev data result: acc :0.9069767441860465 loss: 118.55984497070312
+2021-05-14 16:54:27,549 - INFO - utils.py:154 - save_model() - checkpoint_path: D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\models\model.ckpt
+2021-05-14 16:54:31,806 - INFO - utils.py:156 - save_model() - model saved
+2021-05-14 17:05:16,015 - ERROR - train.py:100 - train() - Traceback (most recent call last):
+  File "D:/spyder/tensorflowproject/bert_bilstm_crf_ner/train.py", line 28, in train
+    train_sentences, tags = load_sentences(args['lower'], args['zeros'], train_data)
+  File "D:\spyder\tensorflowproject\bert_bilstm_crf_ner\bert_data_loader.py", line 29, in load_sentences
+    line = zero_digits(line.rstrip()) if zeros else line.rstrip()
+AttributeError: 'builtin_function_or_method' object has no attribute 'rstrip'
+
+2021-05-14 17:07:54,142 - INFO - train.py:58 - train() - 模型参数保存:D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\config.conf
+2021-05-14 17:07:58,937 - INFO - utils.py:170 - create_model() - Created model with fresh parameters.
+2021-05-14 17:08:29,132 - INFO - train.py:82 - train() - iteration:1 step:100/932, event loss:17.844196
+2021-05-14 17:08:58,303 - INFO - train.py:82 - train() - iteration:1 step:200/932, event loss:11.125536
+2021-05-14 17:09:29,216 - INFO - train.py:82 - train() - iteration:1 step:300/932, event loss: 8.983582
+2021-05-14 17:11:01,255 - INFO - train.py:58 - train() - 模型参数保存:D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\config.conf
+2021-05-14 17:11:06,042 - INFO - utils.py:170 - create_model() - Created model with fresh parameters.
+2021-05-14 17:14:08,378 - INFO - train.py:82 - train() - iteration:1 step:100/117, event loss:13.766210
+2021-05-14 17:15:03,464 - INFO - eval.py:51 - evaluate() - val dataset -- acc: 96.01, pre: 59.39, rec: 77.50, FB1: 67.25
+2021-05-14 17:15:03,465 - INFO - train.py:92 - train() - epoch: 0/3 dev data result: acc :0.9600673337697558 loss: 13.023937225341797
+2021-05-14 17:15:03,465 - INFO - utils.py:154 - save_model() - checkpoint_path: D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\models\model.ckpt
+2021-05-14 17:15:05,677 - INFO - utils.py:156 - save_model() - model saved
+2021-05-14 17:17:37,725 - INFO - train.py:82 - train() - iteration:2 step:83/117, event loss: 6.428759
+2021-05-14 17:19:03,091 - INFO - eval.py:51 - evaluate() - val dataset -- acc: 98.15, pre: 76.04, rec: 86.50, FB1: 80.94
+2021-05-14 17:19:03,092 - INFO - train.py:92 - train() - epoch: 1/3 dev data result: acc :0.9814832133171234 loss: 5.862863540649414
+2021-05-14 17:19:03,092 - INFO - utils.py:154 - save_model() - checkpoint_path: D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\models\model.ckpt
+2021-05-14 17:19:05,032 - INFO - utils.py:156 - save_model() - model saved
+2021-05-14 17:21:02,276 - INFO - train.py:82 - train() - iteration:3 step:66/117, event loss: 4.977837
+2021-05-14 17:23:00,674 - INFO - eval.py:51 - evaluate() - val dataset -- acc: 98.04, pre: 79.09, rec: 87.00, FB1: 82.86
+2021-05-14 17:23:00,675 - INFO - train.py:92 - train() - epoch: 2/3 dev data result: acc :0.9803609838211915 loss: 4.552389621734619
+2021-05-14 17:23:00,675 - INFO - utils.py:154 - save_model() - checkpoint_path: D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\models\model.ckpt
+2021-05-14 17:23:02,568 - INFO - utils.py:156 - save_model() - model saved
+2021-05-15 00:15:32,459 - INFO - bert_export_pb.py:20 - export_pb_file() - config path: D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\config.conf
+2021-05-15 00:15:32,460 - INFO - bert_export_pb.py:32 - export_pb_file() - pb 模型路径为: D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\pbmodel\1
+2021-05-15 00:15:37,245 - INFO - utils.py:165 - create_model() - Reading model parameters from D:\spyder\tensorflowproject\bert_bilstm_crf_ner\model_result\models\model.ckpt-351
+2021-05-15 00:15:42,510 - INFO - bert_export_pb.py:83 - export_pb_file() - 模型转pb完成
